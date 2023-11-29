@@ -6,7 +6,7 @@ package busDepotApp;
  * Assignment Number:    busDepotApp<br />
  * Course Name:         COSC601  <br />
  * Instructor:          George Ding  <br />
- * File Path:          busDepotApp <br />
+ * File Path:          Comparable.java <br />
  *
  * @author Zhenghua Mu
  * @version 1.0.0

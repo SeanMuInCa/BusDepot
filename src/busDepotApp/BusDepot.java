@@ -5,10 +5,10 @@ import java.util.ArrayList;
 /**
  * Purpose:             busDepotApp<br />
  * Data Submitted:      2023/11/27 <br />
- * Assignment Number:    busDepotApp<br />
+ * Assignment Number:    step3-4<br />
  * Course Name:         COSC601  <br />
  * Instructor:          George Ding  <br />
- * File Path:          busDepotApp <br />
+ * File Path:          busDepot.java <br />
  *
  * @author Zhenghua Mu
  * @version 1.0.0

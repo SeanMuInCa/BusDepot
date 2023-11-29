@@ -3,10 +3,10 @@ package busDepotApp;
 /**
  * Purpose:             busDepotApp<br />
  * Data Submitted:      2023/11/23 <br />
- * Assignment Number:    busDepotApp<br />
+ * Assignment Number:   step 1<br />
  * Course Name:         COSC601  <br />
  * Instructor:          George Ding  <br />
- * File Path:          busDepotApp <br />
+ * File Path:          FeatureType.java <br />
  *
  * @author Zhenghua Mu
  * @version 1.0.0
