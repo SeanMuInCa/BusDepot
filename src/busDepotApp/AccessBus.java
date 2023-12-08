@@ -12,7 +12,7 @@ package busDepotApp;
  * @author Zhenghua Mu
  * @version 1.0.0
  */
-public class AccessBus extends Bus implements Comparable<Bus>
+public class AccessBus extends Bus
 {
     //An AccessBus can carry 1 piece of luggage per foot of length.
     private boolean hasWheelChair;

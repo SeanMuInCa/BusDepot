@@ -14,7 +14,7 @@ import java.util.Arrays;
  * @author Zhenghua Mu
  * @version 1.0.0
  */
-public class GreyhoundBus extends Bus implements Stowable,Comparable<Bus>
+public class GreyhoundBus extends Bus implements Stowable
 {
     final int piecesOfLuggagePerFoot = 6;
 

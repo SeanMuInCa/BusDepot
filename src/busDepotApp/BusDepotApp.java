@@ -73,5 +73,21 @@ public class BusDepotApp
         return list;
     }
 
-
+/*
+* Define a Passengers class is better.
+*
+*We could define the Tickets Class, but I don't think that's necessary, we can do the tickets as a Enum like below
+*  to identify that a passenger has or has not own a specific type of ticket. if they do, then they can be on a bus.
+*  <<Enumeration>>
+*   ticketType
+*   +Elder
+*   +Student
+*   +Adults
+*   +Free
+*   +Special
+* For the buses, we need to add a method to check if the bus take the particular ticket or not.
+* For the passenger, we need to add a method to buy particular ticket.
+* With the two methods are combined in this application, I think it's enough.
+*
+* */
 }

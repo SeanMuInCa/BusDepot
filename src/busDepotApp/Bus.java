@@ -12,7 +12,7 @@ package busDepotApp;
  * @author Zhenghua Mu
  * @version 1.0.0
  */
-public abstract class Bus
+public abstract class Bus implements Comparable<Bus>
 {
 
     private int sizeEngine;

@@ -11,7 +11,7 @@ package busDepotApp;
  * @author Zhenghua Mu
  * @version 1.0.0
  */
-public class SchoolBus extends Bus implements Comparable<Bus>
+public class SchoolBus extends Bus
 {
     //A SchoolBus can carry 3 pieces of luggage per foot of length
     private boolean stopArmInstalled;
