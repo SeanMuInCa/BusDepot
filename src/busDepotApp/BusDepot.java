@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class BusDepot
 {
     private int turnAroundSize;// represents the room available for a bus to turn around in feet
-    private int maxPassengers;//represents the maximum number of passengers (per bus) that the Depot allows
+    public int maxPassengers;//represents the maximum number of passengers (per bus) that the Depot allows
     private ArrayList<Bus> busParking;
 
     public BusDepot(int turnAroundSize, int maxPassengers)
@@ -28,8 +28,12 @@ public class BusDepot
         return (this.turnAroundSize > bus.getTurnRadius()) && (maxPassengers > bus.getPassengerCapacity());
     }
     public boolean addBus(Bus bus) {
-        if(!canEnter(bus)) return false;
-        return this.busParking.add(bus);
+        if(canEnter(bus) && !busParking.contains(bus)){
+            busParking.add(bus);
+            return true;
+        }else{
+            return false;
+        }
     }
     public ArrayList<Bus> getBusList() {
         return this.busParking;

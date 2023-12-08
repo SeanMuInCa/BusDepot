@@ -1,6 +1,5 @@
 package busDepotApp;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -28,7 +27,7 @@ public class GreyhoundBus extends Bus implements Stowable,Comparable<Bus>
 
     public GreyhoundBus(String licenseNum, FeatureType[] features)
     {
-        super(0,50,50,licenseNum);
+        super(600,50,50,licenseNum);
         this.entertainmentFeatures = features;
     }
 
@@ -38,13 +37,45 @@ public class GreyhoundBus extends Bus implements Stowable,Comparable<Bus>
     }
 
     public boolean removeFeature(FeatureType feature) {
-        ArrayList<FeatureType> list = new ArrayList<>(Arrays.asList(FeatureType.values()));
-        return list.remove(feature);
+        for (int i = 0; i < entertainmentFeatures.length; i++)
+        {
+            if(entertainmentFeatures[i] == feature){
+                entertainmentFeatures[i] = null;
+                return true;
+            }
+        }
+        return false;
     }
     public boolean addFeature(FeatureType feature) {
-        ArrayList<FeatureType> list = new ArrayList<>();
-        return list.add(feature);
+        if(existsIn(entertainmentFeatures,feature)){
+            return false;
+        }else{
+            insertFeature(this.entertainmentFeatures, feature);
+            return true;
+        }
     }
+
+    private void insertFeature(FeatureType[] entertainmentFeatures, FeatureType feature)
+    {
+        for (int i = 0; i < entertainmentFeatures.length; i++)
+        {
+            if(entertainmentFeatures[i] == null){
+                entertainmentFeatures[i] = feature;
+            }
+        }
+    }
+
+    private boolean existsIn(FeatureType[] entertainmentFeatures, FeatureType feature)
+    {
+        for (int i = 0; i < entertainmentFeatures.length; i++)
+        {
+            if(entertainmentFeatures[i] == feature){
+                return true;
+            }
+        }
+        return false;
+    }
+
     @Override
     public int getTurnRadius()
     {

@@ -18,7 +18,7 @@ public class SchoolBus extends Bus implements Comparable<Bus>
 
     public SchoolBus(String licenseNum, boolean stopArmInstalled)
     {
-        super(0,25,20,licenseNum);
+        super(450,25,20,licenseNum);
         this.stopArmInstalled = stopArmInstalled;
     }
 

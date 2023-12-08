@@ -20,7 +20,7 @@ public class AccessBus extends Bus implements Comparable<Bus>
 
     public AccessBus(String licenseNum, boolean hasWheelChair, int liftCapacity)
     {
-        super(0,15,12,licenseNum);
+        super(400,15,12,licenseNum);
         this.hasWheelChair = hasWheelChair;
         this.liftCapacity = liftCapacity;
     }
