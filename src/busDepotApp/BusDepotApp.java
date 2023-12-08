@@ -18,7 +18,7 @@ public class BusDepotApp
     int countMaxAbove(ArrayList<BusDepot> list, int numberOfPassengers){
         int counter = 0;
         for (BusDepot bd : list){
-            if(bd.maxPassengers > numberOfPassengers){
+            if(bd.getMaxPassengers() > numberOfPassengers){
                 counter++;
             }
         }

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class BusDepot
 {
     private int turnAroundSize;// represents the room available for a bus to turn around in feet
-    public int maxPassengers;//represents the maximum number of passengers (per bus) that the Depot allows
+    private int maxPassengers;//represents the maximum number of passengers (per bus) that the Depot allows
     private ArrayList<Bus> busParking;
 
     public BusDepot(int turnAroundSize, int maxPassengers)
@@ -50,5 +50,10 @@ public class BusDepot
                 ", maxPassengers=" + maxPassengers +
                 ", busParking=" + busParking +
                 '}';
+    }
+
+    public int getMaxPassengers()
+    {
+        return maxPassengers;
     }
 }
